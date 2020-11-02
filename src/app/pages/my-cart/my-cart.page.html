@@ -1,0 +1,97 @@
+<ion-header class="bevco-outlet-page-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/images/icon-white.svg">
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-grid class="ion-no-padding">
+    <ion-row class="delivery-location">
+      <ion-col size="1">
+        <ion-icon name="location">
+        </ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-text>
+          Delivery Location
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ng-container *ngIf="cartitems && cartitems.length > 0">
+
+      <ion-row class="sub-total">
+        <ion-col size="6">
+          <ion-text>
+            Sub Total ({{cartitems.length}})
+          </ion-text>
+        </ion-col>
+        <ion-col size="6" class="ion-text-right">
+          <b>
+            ₹ {{totlaPrice}}
+          </b>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngFor="let item of cartitems" class="cart-item">
+        <ion-col size="3" class="col-padding-5">
+          <img src="./assets/images/dummy-image.jpg">
+        </ion-col>
+        <ion-col size="8" class="item-dtl">
+          <p> {{item.product_name}}</p>
+          <p> ₹ {{item.product_desc}}</p>
+          <p>{{item.product_price}}</p>
+          <ion-row class="actions">
+            <ion-col size="4">
+              <ion-button class="remove">
+                <ion-icon slot="icon-only" name="remove"></ion-icon>
+              </ion-button>
+              <ion-button class="count">
+                1
+              </ion-button>
+              <ion-button class="add">
+                <ion-icon slot="icon-only" name="add"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col size="4" class="delete">
+              <ion-button (click)="removeCartItemAlert(item)">
+                Delete
+              </ion-button>
+            </ion-col>
+            <ion-col size="4" class="save" (click)="saveForLater()">
+              <ion-button>
+                Save for later
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row class="prcd-btn">
+        <ion-col size="12" class="ion-text-center ion-padding">
+          <ion-button fill="block" (click)="shopNow()">
+            Proceed to pay
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ng-container>
+    <ng-container *ngIf="cartitems && cartitems.length == 0">
+      <ion-row class="empty-msg">
+        <ion-col size="12" class="ion-text-center">
+          <p> Cart is empty</p>
+          <ion-button (click)="shopNow()">
+            Shop now
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ng-container>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,136 @@
+ion-header.bevco-order-list-page-header {
+    ion-toolbar {
+        --background: #c70000;
+        --background: -moz-linear-gradient(-45deg, #c70000 0%, #4d0000 100%);
+        --background: -webkit-linear-gradient(-45deg, #c70000 0%, #4d0000 100%);
+        --background: linear-gradient(135deg, #c70000 0%, #4d0000 100%);
+        --filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c70000', endColorstr='#4d0000', GradientType=1);
+        ion-buttons {
+            ion-back-button {
+                color: #fff;
+            }
+            ion-menu-button {
+                color: #fff;
+            }
+        }
+        ion-title {
+            color: #fff;
+            font-size: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            img {
+                max-width: 30px;
+                display: inline-block;
+                margin-top: 3px;
+            }
+            span {
+                display: inline-block;
+                position: relative;
+                margin-left: 6px;
+                top: -9px;
+            }
+        }
+    }
+}
+ion-content.bevco-order-list-page-content {
+    --background: rgba(251, 246, 255, 0.3);
+    ion-card {
+        --background: transparent;
+        box-shadow: none;
+        ion-card-content {
+            padding: 0;
+        }
+    }
+    ion-card.bevco-order-list-container {
+        ion-card-header {
+            padding-top: 5px;
+            padding-bottom: 5px;
+          ion-title {
+            font-size: 16px;
+          }
+          ion-card-subtitle {
+            color: #C70000;
+            font-family: 'Poppins', sans-serif;
+            font-size: larger;
+            font-weight: bold;
+            padding: 5px;
+            text-align: center;
+            text-transform: capitalize;
+          }
+        }
+        ion-card-content {
+            border-bottom-width: 1px;
+            border-bottom-style: ridge;
+            margin-bottom: 10px;
+            border-top-width: 1px;
+            border-top-style: ridge;
+            margin-top: 10px;
+            ion-grid.order-list-grid {
+                ion-infinite-scroll {
+                    height: 30px;
+                }
+                ion-infinite-scroll.notify-list-puller-bottom {
+                    position: absolute;
+                }
+                div.order-list-section {
+                    ion-row.order-list-row {
+                        border-radius: 10px;
+                        box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
+                        margin-bottom: 15px;
+                        ion-col.order-list-row-info-column {
+                            padding: 10px;
+                            ion-label.order-list-row-info-area {
+                                span.order-content-highlighter {
+                                    display: block;
+                                    font-size: small;
+                                    font-weight: normal;
+                                    text-align: left;
+                                    white-space: normal;
+                                    width: 100%;
+                                }
+                                span.order-info-id {
+                                    color: #000;
+                                    font-size: medium;
+                                    font-weight: bold;
+                                }
+                                span.order-info-ordered-date {
+                                    color: #ACACAC;
+                                }
+                            }
+                        }
+                        ion-col.order-list-row-price-column {
+                            ion-label.order-list-row-price-area {
+                                span.order-content-highlighter {
+                                    display: block;
+                                    font-size: medium;
+                                    white-space: normal;
+                                    width: 100%;
+                                }
+                                span.order-price-grand-total {
+                                    color: #C70000;
+                                    font-size: medium;
+                                    font-weight: bold;
+                                    padding-top: 20%;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+                div.order-list-empty-section {
+                    ion-row {
+                        ion-col {
+                            margin-top: 40%;
+                            text-align: center;
+                            span {
+                                font-size: larger;
+                                font-style: italic;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+ion-header {
+    ion-toolbar {
+      --background: #233f8a;
+      ion-menu-button {
+        color: #fff;
+      }
+    ion-title {
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-left: 0;
+        img {
+          max-width: 30px;
+          display: inline-block;
+          margin-top: 3px;
+        }
+      }
+      ion-icon {
+        color: white;
+      }
+    }
+  }
+  .delivery-location {
+      background: #c1bbbb;
+      color: black;
+      padding: 5px 20px ;
+      ion-icon {
+          color: #6f6c6c;
+      }
+  }
+  .sub-total {
+    padding: 5px 20px;
+    border-bottom: 1px solid gray;  
+    b {
+        color: red;
+    } 
+  }
+  .cart-item {
+    padding: 10px;   
+    p {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    .item-dtl {
+        margin-left: 10px;
+    }
+    .actions { 
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        ion-button {
+            --padding-start: 0;
+            --padding-end: 0;
+            --background: white;
+            --color: black;
+            --box-shadow: none;
+            border: 1px solid black;
+            font-size: 10px;
+            height: 20px;
+            width: 20px;
+            margin: 0;
+        }
+        .remove {
+            border-right: none;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        .add {
+            border-left: none;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .count {
+            width: 25px;
+            --background: #f3f3f3;
+            font-size: 14px;
+        }
+        .delete, .save {
+            ion-button {
+                width: -webkit-fill-available;
+                font-size: 7px;
+            }
+        }
+        .delete {
+            padding-right: 10px;
+        }
+    }
+  }
+  .empty-msg {
+      margin-top: 35vh;
+  }
+
+  .prcd-btn {
+    --background: #233f8a;
+    --color: white;
+  }

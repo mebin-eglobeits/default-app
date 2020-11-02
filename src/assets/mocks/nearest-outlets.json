@@ -1,0 +1,43 @@
+{
+    "status": "success",
+    "data": {
+        "nearest_outlets": [
+            {
+                "id": 23,
+                "name": "Kazhakootam",
+                "distance": "1.5Km",
+                "image": "mocks/home/01_IMG_20180809_155034_HDR.png"
+            },
+            {
+                "id": 25,
+                "name": "Pothencode",
+                "distance": "4Km",
+                "image": "mocks/home/02_liquor.png"
+            },
+            {
+                "id": 28,
+                "name": "Ulloor",
+                "distance": "6Km",
+                "image": "mocks/home/03_bar_liquor.png"
+            },
+            {
+                "id": 35,
+                "name": "Chenkottukonam",
+                "distance": "2Km",
+                "image": "mocks/home/04_29476544594_beec0910eb_b.png"
+            },
+            {
+                "id": 39,
+                "name": "Kesavadasapuram",
+                "distance": "7Km",
+                "image": "mocks/home/05_dc-Cover-n6r01j3okakqcg.png"
+            },
+            {
+                "id": 42,
+                "name": "Petta",
+                "distance": "7Km",
+                "image": "mocks/home/06_bev.png"
+            }
+        ]
+    }
+}

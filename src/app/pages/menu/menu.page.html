@@ -1,0 +1,52 @@
+<ion-split-pane contentId="main-content">
+
+  <ion-menu contentId="main-content" type="overlay">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>
+          <img src="assets/images/icon-white.svg">
+          <span>Hello,</span>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list style="border-bottom: 1px solid gray;">
+        <ion-menu-toggle auto-hide="false" (click)="setHome()">
+          <ion-item lines="none">
+            <ion-label>
+              <span>Home</span>
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none">
+            <ion-label>
+              <span>Shop By Category</span>
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="false" style="">
+          <ion-item lines="none">
+            <ion-label>
+              <span>Top Deals</span>
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+      <ion-list>
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+          <ion-item (click)="menuItemClicked(p)" [class.active-item]="selectedPath == p.pageUrl" lines="none">
+            <ion-label>
+              <span>{{p.title}}</span>
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+
+  </ion-menu>
+
+  <ion-router-outlet id="main-content" main></ion-router-outlet>
+
+</ion-split-pane>

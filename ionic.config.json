@@ -1,5 +1,7 @@
 {
   "name": "magento-default-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,83 @@
+ion-header {
+  ion-toolbar {
+    --background: #233f8a;
+    ion-menu-button {
+      color: #fff;
+    }
+  ion-title {
+      color: #fff;
+      font-size: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      padding-left: 0;
+      img {
+        max-width: 30px;
+        display: inline-block;
+        margin-top: 3px;
+      }
+    }
+    ion-icon {
+      color: white;
+    }
+  }
+}
+ion-grid {
+  .location {
+    border-bottom: 1px solid gray;
+    ion-col {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  .catergories {
+    ion-label {
+      color: black;
+      font-size: 11px;
+    }
+  }
+  .prd-banner {
+    height: 10vh;
+    img {
+      height: 10vh;
+      width: 100%;
+    }
+  }
+  .deals {
+    border-bottom: 1px solid gray;
+    .prod-img {
+      margin: 0 20%;
+    }
+    .prod-dtl {
+      margin: 10px 10%;
+      h5 {
+        margin: 0;
+      }
+    }
+    .head {
+      padding: 10px 10px;
+      margin-top: 5px;
+      background: gainsboro;
+      color: black;
+      .filter {   
+         padding: 3px 15px;
+        /* border: 1px solid black; */
+        background: #d2d2d2;
+        color: #4a4a4a;
+      }
+    }
+    .deal-prod {
+      padding: 20px 0;
+      border-bottom: 1px solid gray;
+      ion-label {
+        color: black;
+      }
+      ion-button {
+        --background:  #233f8a;
+        margin-top: 10px;
+        height: 30px;
+        font-size: 10px;
+        --border-radius: 0;
+      }
+    }
+  }
+}

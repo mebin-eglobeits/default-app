@@ -1,0 +1,308 @@
+{
+    "items": [
+        {
+            "id": 3,
+            "parent_id": 2,
+            "name": "Cakes & Cupcakes",
+            "is_active": true,
+            "position": 1,
+            "level": 2,
+            "children": "",
+            "created_at": "2020-03-29 14:52:35",
+            "updated_at": "2020-03-31 10:21:28",
+            "path": "1/2/3",
+            "available_sort_by": [],
+            "include_in_menu": true,
+            "custom_attributes": [
+                {
+                    "attribute_code": "display_mode",
+                    "value": "PRODUCTS"
+                },
+                {
+                    "attribute_code": "is_anchor",
+                    "value": "1"
+                },
+                {
+                    "attribute_code": "path",
+                    "value": "1/2/3"
+                },
+                {
+                    "attribute_code": "children_count",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_use_parent_settings",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_apply_to_products",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "url_key",
+                    "value": "cup-cakes"
+                },
+                {
+                    "attribute_code": "url_path",
+                    "value": "cup-cakes"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "parent_id": 2,
+            "name": "Cookies & Bars",
+            "is_active": true,
+            "position": 3,
+            "level": 2,
+            "children": "",
+            "created_at": "2020-03-29 17:25:41",
+            "updated_at": "2020-03-31 10:19:40",
+            "path": "1/2/5",
+            "available_sort_by": [],
+            "include_in_menu": true,
+            "custom_attributes": [
+                {
+                    "attribute_code": "display_mode",
+                    "value": "PRODUCTS"
+                },
+                {
+                    "attribute_code": "is_anchor",
+                    "value": "1"
+                },
+                {
+                    "attribute_code": "path",
+                    "value": "1/2/5"
+                },
+                {
+                    "attribute_code": "children_count",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_use_parent_settings",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_apply_to_products",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "url_key",
+                    "value": "cookies"
+                },
+                {
+                    "attribute_code": "url_path",
+                    "value": "cookies"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "parent_id": 2,
+            "name": "Desserts",
+            "is_active": true,
+            "position": 4,
+            "level": 2,
+            "children": "",
+            "created_at": "2020-03-31 10:18:48",
+            "updated_at": "2020-03-31 10:18:48",
+            "path": "1/2/7",
+            "available_sort_by": [],
+            "include_in_menu": true,
+            "custom_attributes": [
+                {
+                    "attribute_code": "display_mode",
+                    "value": "PRODUCTS"
+                },
+                {
+                    "attribute_code": "is_anchor",
+                    "value": "1"
+                },
+                {
+                    "attribute_code": "path",
+                    "value": "1/2/7"
+                },
+                {
+                    "attribute_code": "children_count",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_use_parent_settings",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_apply_to_products",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "url_key",
+                    "value": "desserts"
+                },
+                {
+                    "attribute_code": "url_path",
+                    "value": "desserts"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "parent_id": 2,
+            "name": "Sandwiches & Salads",
+            "is_active": true,
+            "position": 5,
+            "level": 2,
+            "children": "",
+            "created_at": "2020-03-31 10:22:18",
+            "updated_at": "2020-03-31 10:23:38",
+            "path": "1/2/8",
+            "available_sort_by": [],
+            "include_in_menu": true,
+            "custom_attributes": [
+                {
+                    "attribute_code": "display_mode",
+                    "value": "PRODUCTS"
+                },
+                {
+                    "attribute_code": "is_anchor",
+                    "value": "1"
+                },
+                {
+                    "attribute_code": "path",
+                    "value": "1/2/8"
+                },
+                {
+                    "attribute_code": "children_count",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_use_parent_settings",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_apply_to_products",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "url_key",
+                    "value": "sandwiches-salads"
+                },
+                {
+                    "attribute_code": "url_path",
+                    "value": "sandwiches-salads"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "parent_id": 2,
+            "name": "Breads & Rolls",
+            "is_active": true,
+            "position": 6,
+            "level": 2,
+            "children": "",
+            "created_at": "2020-03-31 10:23:23",
+            "updated_at": "2020-03-31 10:23:23",
+            "path": "1/2/10",
+            "available_sort_by": [],
+            "include_in_menu": true,
+            "custom_attributes": [
+                {
+                    "attribute_code": "display_mode",
+                    "value": "PRODUCTS"
+                },
+                {
+                    "attribute_code": "is_anchor",
+                    "value": "1"
+                },
+                {
+                    "attribute_code": "path",
+                    "value": "1/2/10"
+                },
+                {
+                    "attribute_code": "children_count",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_use_parent_settings",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_apply_to_products",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "url_key",
+                    "value": "breads-rolls"
+                },
+                {
+                    "attribute_code": "url_path",
+                    "value": "breads-rolls"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "parent_id": 2,
+            "name": "Cafe & Beverages",
+            "is_active": true,
+            "position": 7,
+            "level": 2,
+            "children": "",
+            "created_at": "2020-03-31 10:24:04",
+            "updated_at": "2020-03-31 10:24:04",
+            "path": "1/2/11",
+            "available_sort_by": [],
+            "include_in_menu": true,
+            "custom_attributes": [
+                {
+                    "attribute_code": "display_mode",
+                    "value": "PRODUCTS"
+                },
+                {
+                    "attribute_code": "is_anchor",
+                    "value": "1"
+                },
+                {
+                    "attribute_code": "path",
+                    "value": "1/2/11"
+                },
+                {
+                    "attribute_code": "children_count",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_use_parent_settings",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "custom_apply_to_products",
+                    "value": "0"
+                },
+                {
+                    "attribute_code": "url_key",
+                    "value": "cafe-beverages"
+                },
+                {
+                    "attribute_code": "url_path",
+                    "value": "cafe-beverages"
+                }
+            ]
+        }
+    ],
+    "search_criteria": {
+        "filter_groups": [
+            {
+                "filters": [
+                    {
+                        "field": "level",
+                        "value": "2",
+                        "condition_type": "eq"
+                    }
+                ]
+            }
+        ],
+        "page_size": 10,
+        "current_page": 1
+    },
+    "total_count": 6
+}

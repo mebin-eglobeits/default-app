@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "code": "default",
+        "website_id": 1,
+        "locale": "en_US",
+        "base_currency_code": "INR",
+        "default_display_currency_code": "INR",
+        "timezone": "Asia/Kolkata",
+        "weight_unit": "lbs",
+        "base_url": "http://192.168.1.46/php72/bevco-mage2/",
+        "base_link_url": "http://192.168.1.46/php72/bevco-mage2/",
+        "base_static_url": "http://192.168.1.46/php72/bevco-mage2/pub/static/version1584431903/",
+        "base_media_url": "http://192.168.1.46/php72/bevco-mage2/pub/media/",
+        "secure_base_url": "https://192.168.1.46/php72/bevco-mage2/",
+        "secure_base_link_url": "https://192.168.1.46/php72/bevco-mage2/",
+        "secure_base_static_url": "https://192.168.1.46/php72/bevco-mage2/pub/static/version1584431903/",
+        "secure_base_media_url": "https://192.168.1.46/php72/bevco-mage2/pub/media/"
+    }
+]

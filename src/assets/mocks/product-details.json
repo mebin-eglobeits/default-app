@@ -1,0 +1,136 @@
+{
+    "id": 1199,
+    "sku": "WH11-XL-Orange",
+    "name": "Eos V-Neck Hoodie-XL-Orange",
+    "attribute_set_id": 9,
+    "price": 54,
+    "status": 1,
+    "visibility": 1,
+    "type_id": "simple",
+    "created_at": "2020-03-05 04:44:47",
+    "updated_at": "2020-03-05 04:44:47",
+    "weight": 1,
+    "extension_attributes": {
+        "website_ids": [
+            1
+        ],
+        "category_links": [
+            {
+                "position": 0,
+                "category_id": "24"
+            },
+            {
+                "position": 0,
+                "category_id": "34"
+            },
+            {
+                "position": 0,
+                "category_id": "2"
+            }
+        ],
+        "stock_item": {
+            "item_id": 1199,
+            "product_id": 1199,
+            "stock_id": 1,
+            "qty": 100,
+            "is_in_stock": true,
+            "is_qty_decimal": false,
+            "show_default_notification_message": false,
+            "use_config_min_qty": true,
+            "min_qty": 0,
+            "use_config_min_sale_qty": 1,
+            "min_sale_qty": 1,
+            "use_config_max_sale_qty": true,
+            "max_sale_qty": 10000,
+            "use_config_backorders": true,
+            "backorders": 0,
+            "use_config_notify_stock_qty": true,
+            "notify_stock_qty": 1,
+            "use_config_qty_increments": true,
+            "qty_increments": 0,
+            "use_config_enable_qty_inc": true,
+            "enable_qty_increments": false,
+            "use_config_manage_stock": true,
+            "manage_stock": true,
+            "low_stock_date": null,
+            "is_decimal_divided": false,
+            "stock_status_changed_auto": 0
+        }
+    },
+    "product_links": [],
+    "options": [],
+    "media_gallery_entries": [
+        {
+            "id": 2030,
+            "media_type": "image",
+            "label": "",
+            "position": 1,
+            "disabled": false,
+            "types": [
+                "image",
+                "small_image",
+                "thumbnail"
+            ],
+            "file": "/w/h/wh11-orange_main_1.jpg"
+        }
+    ],
+    "tier_prices": [],
+    "custom_attributes": [
+        {
+            "attribute_code": "image",
+            "value": "/w/h/wh11-orange_main_1.jpg"
+        },
+        {
+            "attribute_code": "small_image",
+            "value": "/w/h/wh11-orange_main_1.jpg"
+        },
+        {
+            "attribute_code": "thumbnail",
+            "value": "/w/h/wh11-orange_main_1.jpg"
+        },
+        {
+            "attribute_code": "options_container",
+            "value": "container2"
+        },
+        {
+            "attribute_code": "msrp_display_actual_price_type",
+            "value": "0"
+        },
+        {
+            "attribute_code": "url_key",
+            "value": "eos-v-neck-hoodie-xl-orange"
+        },
+        {
+            "attribute_code": "required_options",
+            "value": "0"
+        },
+        {
+            "attribute_code": "has_options",
+            "value": "0"
+        },
+        {
+            "attribute_code": "tax_class_id",
+            "value": "2"
+        },
+        {
+            "attribute_code": "category_ids",
+            "value": [
+                "24",
+                "34",
+                "2"
+            ]
+        },
+        {
+            "attribute_code": "description",
+            "value": "<p>Getting chilly before class starts? Wear the Eos on your way to and from yoga for a cute and cozy warmup piece. Reach for its reliable comfort and enjoy a super-soft blend of fabrics finished in sporty style that includes a hidden kangaroo pocket.</p>\n<p>Semi-fitted. <br />Long-Sleeve. <br />Machine wash/line dry.</p>"
+        },
+        {
+            "attribute_code": "size",
+            "value": "5597"
+        },
+        {
+            "attribute_code": "color",
+            "value": "5483"
+        }
+    ]
+}

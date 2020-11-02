@@ -1,0 +1,78 @@
+<ion-header class="bevco-order-list-page-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaulthref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/images/icon-white.svg">
+      <span>{{appTitle}}</span>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bevco-order-list-page-content" fullscreen>
+
+  <ion-card class="bevco-order-list-container">
+
+    <ion-card-header>
+      <ion-card-subtitle>{{pageTitle}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-grid class="order-list-grid">
+
+        <div *ngIf="orderListResult.length > 0" class="order-list-section">
+
+          <ion-row class="order-list-row" *ngFor="let order of orderListResult" (click)="selectOrder(order)">
+
+            <ion-col class="order-list-row-info-column" size="9">
+
+              <ion-label class="order-list-row-info-area">
+
+                <span class="order-content-highlighter order-info-id">Order ID : {{getOrderId(order)}}</span>
+                <span class="order-content-highlighter order-info-ordered-date">Ordered on {{getOrderCreatedTDate(order)}}</span>
+
+              </ion-label>
+
+            </ion-col>
+
+            <ion-col class="order-list-row-price-column" size="3">
+
+              <ion-label class="order-list-row-price-area">
+
+                <span class="order-content-highlighter order-price-grand-total">{{getOrderGrandTotal(order)}}</span>
+
+              </ion-label>
+
+            </ion-col>
+
+          </ion-row>
+
+        </div>
+
+        <div *ngIf="orderListResult.length == 0" class="order-list-empty-section">
+
+          <ion-row>
+            <ion-col size="12">
+              <span>No Orders found!</span>
+            </ion-col>
+          </ion-row>
+
+        </div>
+
+        <ion-infinite-scroll #moreOrdersScroller class="order-list-puller-bottom" 
+          threshold="7%" position="bottom" (ionInfinite)="loadMoreOrders($event)">
+          <ion-infinite-scroll-content loadingSpinner="crescent" loadingText=""></ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+
+      </ion-grid>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

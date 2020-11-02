@@ -1,0 +1,15 @@
+[
+    {
+        "id": 2030,
+        "media_type": "image",
+        "label": "",
+        "position": 1,
+        "disabled": false,
+        "types": [
+            "image",
+            "small_image",
+            "thumbnail"
+        ],
+        "file": "/w/h/wh11-orange_main_1.jpg"
+    }
+]

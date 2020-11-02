@@ -1,0 +1,16 @@
+.active-item {
+    border-left: 8px solid var(--ion-color-primary);
+}
+
+ion-toolbar {
+    --background: #233f8a;
+    color: white;
+    img {
+      max-width: 25px;
+      display: inline-block;
+      margin-top: 3px;
+    }
+    span {
+        margin-left: 10px;
+    }
+}

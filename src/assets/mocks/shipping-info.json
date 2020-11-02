@@ -1,0 +1,92 @@
+{
+    "payment_methods": [
+        {
+            "code": "cashondelivery",
+            "title": "Cash On Delivery"
+        },
+        {
+            "code": "banktransfer",
+            "title": "Bank Transfer Payment"
+        },
+        {
+            "code": "checkmo",
+            "title": "Check \/ Money order"
+        }
+    ],
+    "totals": {
+        "grand_total": 117,
+        "base_grand_total": 117,
+        "subtotal": 102,
+        "base_subtotal": 102,
+        "discount_amount": 0,
+        "base_discount_amount": 0,
+        "subtotal_with_discount": 102,
+        "base_subtotal_with_discount": 102,
+        "shipping_amount": 15,
+        "base_shipping_amount": 15,
+        "shipping_discount_amount": 0,
+        "base_shipping_discount_amount": 0,
+        "tax_amount": 0,
+        "base_tax_amount": 0,
+        "weee_tax_applied_amount": null,
+        "shipping_tax_amount": 0,
+        "base_shipping_tax_amount": 0,
+        "subtotal_incl_tax": 102,
+        "shipping_incl_tax": 15,
+        "base_shipping_incl_tax": 15,
+        "base_currency_code": "INR",
+        "quote_currency_code": "INR",
+        "items_qty": 3,
+        "items": [
+            {
+                "item_id": 13,
+                "price": 34,
+                "base_price": 34,
+                "qty": 3,
+                "row_total": 102,
+                "base_row_total": 102,
+                "row_total_with_discount": 0,
+                "tax_amount": 0,
+                "base_tax_amount": 0,
+                "tax_percent": 0,
+                "discount_amount": 0,
+                "base_discount_amount": 0,
+                "discount_percent": 0,
+                "price_incl_tax": 34,
+                "base_price_incl_tax": 34,
+                "row_total_incl_tax": 102,
+                "base_row_total_incl_tax": 102,
+                "options": "[]",
+                "weee_tax_applied_amount": null,
+                "weee_tax_applied": null,
+                "name": "Joust Duffle Bag"
+            }
+        ],
+        "total_segments": [
+            {
+                "code": "subtotal",
+                "title": "Subtotal",
+                "value": 102
+            },
+            {
+                "code": "shipping",
+                "title": "Shipping & Handling (Flat Rate - Fixed)",
+                "value": 15
+            },
+            {
+                "code": "tax",
+                "title": "Tax",
+                "value": 0,
+                "extension_attributes": {
+                    "tax_grandtotal_details": []
+                }
+            },
+            {
+                "code": "grand_total",
+                "title": "Grand Total",
+                "value": 117,
+                "area": "footer"
+            }
+        ]
+    }
+}

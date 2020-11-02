@@ -1,0 +1,77 @@
+<ion-header class="bevco-outlet-page-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/images/icon-white.svg">
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="" fullscreen>
+  <ion-grid class="ion-no-padding">
+    <ion-row class="delivery-location">
+      <ion-col size="1">
+        <ion-icon name="location">
+        </ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-text>
+          Delivery Location
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="prd-dtl ion-padding">
+      <p>
+        {{productData?.product_name}}
+      </p>
+      <p>
+        {{productData?.product_desc}}
+      </p>
+      <p>
+        ₹ {{productData?.product_price}}
+      </p>
+    </ion-row>
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <img src="./assets/images/dummy-image.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="./assets/images/dummy-image.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="./assets/images/dummy-image.jpg">
+      </ion-slide>
+    </ion-slides>
+    <ion-row class="prd-atrbt">
+      <ion-col size="12" class="atb">
+        <ion-text>
+          Product Attribute
+        </ion-text>
+      </ion-col>
+      <ion-col size="12" class="atb">
+        <ion-text>
+          Product Attribute
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="act-btn">
+      <ion-col size="12">
+        <ion-button expand="block" class="ion-no-margin" (click)="addToCart()">
+          Add to Cart
+        </ion-button>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button expand="block" class="ion-no-margin" (click)="addToCart()">
+          Add to Cart
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

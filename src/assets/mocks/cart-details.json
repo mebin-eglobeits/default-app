@@ -1,0 +1,136 @@
+{
+    "id": 3,
+    "created_at": "2020-03-24 05:41:03",
+    "updated_at": "2020-03-24 19:01:07",
+    "is_active": true,
+    "is_virtual": false,
+    "items": [
+        {
+            "item_id": 5,
+            "sku": "WH11-XL-Orange",
+            "qty": 2,
+            "name": "Eos V-Neck Hoodie-XL-Orange",
+            "price": 54,
+            "product_type": "simple",
+            "quote_id": "3"
+        }
+    ],
+    "items_count": 1,
+    "items_qty": 2,
+    "customer": {
+        "id": 2,
+        "group_id": 1,
+        "default_billing": "2",
+        "default_shipping": "2",
+        "created_at": "2020-03-24 05:38:31",
+        "updated_at": "2020-03-24 09:40:13",
+        "created_in": "Default Store View",
+        "email": "gopinath@eglobeits.com",
+        "firstname": "Gopinath",
+        "lastname": "R",
+        "store_id": 1,
+        "website_id": 1,
+        "addresses": [
+            {
+                "id": 2,
+                "customer_id": 2,
+                "region": {
+                    "region_code": "KL",
+                    "region": "Kerala",
+                    "region_id": 550
+                },
+                "region_id": 550,
+                "country_id": "IN",
+                "street": [
+                    "TC 29-301(1), Althara Nagar B Street 45,",
+                    "Sasthamangalam PO,",
+                    "Vellayambalam"
+                ],
+                "telephone": "9003644594",
+                "postcode": "695010",
+                "city": "Thiruvananthapuram",
+                "firstname": "Gopinath",
+                "lastname": "R",
+                "default_shipping": true,
+                "default_billing": true
+            }
+        ],
+        "disable_auto_group_change": 0,
+        "extension_attributes": {
+            "is_subscribed": false
+        }
+    },
+    "billing_address": {
+        "id": 5,
+        "region": null,
+        "region_id": null,
+        "region_code": null,
+        "country_id": null,
+        "street": [
+            ""
+        ],
+        "telephone": null,
+        "postcode": null,
+        "city": null,
+        "firstname": null,
+        "lastname": null,
+        "customer_id": 2,
+        "email": "gopinath@eglobeits.com",
+        "same_as_billing": 0,
+        "save_in_address_book": 0
+    },
+    "orig_order_id": 0,
+    "currency": {
+        "global_currency_code": "INR",
+        "base_currency_code": "INR",
+        "store_currency_code": "INR",
+        "quote_currency_code": "INR",
+        "store_to_base_rate": 0,
+        "store_to_quote_rate": 0,
+        "base_to_global_rate": 1,
+        "base_to_quote_rate": 1
+    },
+    "customer_is_guest": false,
+    "customer_note_notify": true,
+    "customer_tax_class_id": 3,
+    "store_id": 1,
+    "extension_attributes": {
+        "shipping_assignments": [
+            {
+                "shipping": {
+                    "address": {
+                        "id": 6,
+                        "region": null,
+                        "region_id": null,
+                        "region_code": null,
+                        "country_id": null,
+                        "street": [
+                            ""
+                        ],
+                        "telephone": null,
+                        "postcode": null,
+                        "city": null,
+                        "firstname": null,
+                        "lastname": null,
+                        "customer_id": 2,
+                        "email": "gopinath@eglobeits.com",
+                        "same_as_billing": 1,
+                        "save_in_address_book": 0
+                    },
+                    "method": null
+                },
+                "items": [
+                    {
+                        "item_id": 5,
+                        "sku": "WH11-XL-Orange",
+                        "qty": 2,
+                        "name": "Eos V-Neck Hoodie-XL-Orange",
+                        "price": 54,
+                        "product_type": "simple",
+                        "quote_id": "3"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,221 @@
+ion-header.bevco-account-details-page-header {
+    ion-toolbar {
+        --background: #c70000;
+        --background: -moz-linear-gradient(-45deg, #c70000 0%, #4d0000 100%);
+        --background: -webkit-linear-gradient(-45deg, #c70000 0%, #4d0000 100%);
+        --background: linear-gradient(135deg, #c70000 0%, #4d0000 100%);
+        --filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c70000', endColorstr='#4d0000', GradientType=1);
+        ion-buttons {
+            ion-back-button {
+                color: #fff;
+            }
+            ion-menu-button {
+                color: #fff;
+            }
+        }
+        ion-title {
+            color: #fff;
+            font-size: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            img {
+                max-width: 30px;
+                display: inline-block;
+                margin-top: 3px;
+            }
+            span {
+                display: inline-block;
+                position: relative;
+                margin-left: 6px;
+                top: -9px;
+            }
+        }
+    }
+}
+ion-content.bevco-account-details-page-content {
+    --background: rgba(251, 246, 255, 0.3);
+    ion-card {
+        --background: transparent;
+        box-shadow: none;
+        ion-card-content {
+            padding: 0;
+        }
+    }
+    ion-card.bevco-account-details-container {
+        ion-card-header {
+            padding-top: 5px;
+            padding-bottom: 5px;
+          ion-title {
+            font-size: 16px;
+          }
+          ion-card-subtitle {
+            color: #C70000;
+            font-family: 'Poppins', sans-serif;
+            font-size: larger;
+            font-weight: bold;
+            padding: 5px;
+            text-align: center;
+            text-transform: capitalize;
+          }
+        }
+        ion-card-content {
+            background: transparent;
+            padding: 0;
+            ion-input{
+                height: 36px;
+                border-radius: 20px;
+                border: 1px solid #ddd;
+                padding: 0 15px;
+                line-height: 30px;
+                box-shadow: 0 0 26px rgba(0, 0, 0, .1);
+            }
+            ion-list.bevco-account-form-section {
+                --background: transparent;
+                background: transparent;
+                padding: 15px 15px;
+                form.bevco-account-form-container {
+                    border-radius: 10px;
+                    box-shadow: 0 0 30px rgba(0, 0, 0, .16);
+                    background: #fff;
+                    padding: 5px;
+                    ion-list-header {
+                        color: #c70000;
+                        display: block !important;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 22px;
+                        padding-left: 0;
+                        text-align: center;
+                        text-transform: capitalize;
+                    }
+                    ion-item.bevco-account-page-profile-picture-section {
+                        --border-width: 0;
+                        --inner-border-width: 0;
+                        ion-avatar {
+                            width: 100px;
+                            height: 100px;
+                            margin: 0 auto 15px auto;
+                            display: block;
+                        }
+                    }
+                    ion-item.account-details-info-section {
+                        margin-bottom: 15px;
+                        ion-grid {
+                            ion-row.account-details-info-part {
+                                ion-col.account-details-info-label {
+                                    ion-label {
+                                        color: #000;
+                                        font-size: medium;
+                                        font-style: italic;
+                                        font-weight: normal;
+                                        text-align: left;
+                                    }
+                                }
+                                ion-col.account-details-info-value {
+                                    ion-label {
+                                        color: #000;
+                                        font-size: medium;
+                                        font-weight: normal;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ion-item.form-input-section {
+                        --border-width: 0;
+                        --inner-border-width: 0;
+                        padding-inline-end: 0;
+                        .item-inner{
+                            --padding: 0;
+                        }
+                        ion-label {
+                            color: #C70000;
+                            margin-bottom: 10px;
+                            font-family: 'Poppins', sans-serif;
+                            --border-width: 0;
+                            --inner-border-width: 0;
+                        }
+                        ion-input.bevco-account-form-input-control {
+                            --padding: 0 15px;
+                            --padding-start:15px;
+                            --padding-end:15px;
+                        }
+                    }
+                    div.validation-errors {
+                        color: red;
+                        font-size: 15px;
+                        padding-top: 5px !important;
+                        padding-left: 15px;
+                        --border-width: 0;
+                        --inner-border-width: 0;
+                    }
+                    div.bevco-account-form-input-buttons-section {
+                        margin-top: 15px;
+                        padding: 0 10px 10px;
+                        ion-button {
+                            --background: #c70000;
+                            --background: -moz-linear-gradient(-45deg, #c70000 0%, #4d0000 100%);
+                            --background: -webkit-linear-gradient(-45deg, #c70000 0%, #4d0000 100%);
+                            --background: linear-gradient(135deg, #c70000 0%, #4d0000 100%);
+                            --filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c70000', endColorstr='#4d0000', GradientType=1);
+                            --border-radius: 20px;
+                            text-transform: capitalize;
+                            font-size: 14px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            width: 50%;
+                            height: 42px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ion-item.bevco-account-page-addresses-section {
+        margin-top: 10px;
+        ion-button {
+            --background: #c70000;
+            --background: -moz-linear-gradient(-45deg, #c70000 0%, #4d0000 100%);
+            --background: -webkit-linear-gradient(-45deg, #c70000 0%, #4d0000 100%);
+            --background: linear-gradient(135deg, #c70000 0%, #4d0000 100%);
+            --filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c70000', endColorstr='#4d0000', GradientType=1);
+            --border-radius: 20px;
+            font-size: 14px;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-transform: capitalize;
+            width: 80%;
+        }
+    }
+    ion-item.bevco-account-page-sign-out-section {
+        margin-top: 10px;
+        ion-button {
+            --background: #c70000;
+            --background: -moz-linear-gradient(-45deg, #c70000 0%, #4d0000 100%);
+            --background: -webkit-linear-gradient(-45deg, #c70000 0%, #4d0000 100%);
+            --background: linear-gradient(135deg, #c70000 0%, #4d0000 100%);
+            --filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c70000', endColorstr='#4d0000', GradientType=1);
+            --border-radius: 20px;
+            font-size: 14px;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-transform: capitalize;
+            width: 80%;
+        }
+    }
+    ion-card.bevco-account-page-empty-container {
+        ion-card-content {
+            ion-item {
+                margin-bottom: 45%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 45%;
+                text-align: center;
+                ion-label.no-profile-content {
+                    font-size: large;
+                    white-space: normal;
+                }
+            }
+        }
+    }
+}

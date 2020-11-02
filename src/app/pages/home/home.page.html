@@ -1,0 +1,118 @@
+<ion-header class="bevco-outlet-page-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/images/icon-white.svg">
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToCart()">
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="" fullscreen>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12" class="ion-no-padding">
+        <ion-searchbar class="ion-no-padding" placeholder="Search"></ion-searchbar>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" class="ion-no-padding">
+        <ion-searchbar class="ion-no-padding" placeholder="Select a delivery location to product availability">
+        </ion-searchbar>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row class="location">
+      <ion-col size="1" class="ion-padding">
+        <ion-icon name="location"></ion-icon>
+      </ion-col>
+      <ion-col size="10" class="ion-padding loc-name">
+        <ion-label>
+          Location name
+        </ion-label>
+      </ion-col>
+    </ion-row> -->
+    <ion-row class="catergories">
+      <ion-col size="1">
+
+      </ion-col>
+      <ion-col size="2" class="col-padding-5 ion-text-center">
+        <div class="round-img">
+          <img src="./assets/images/woman.svg">
+        </div>
+        <ion-label>Women</ion-label>
+      </ion-col>
+      <ion-col size="2" class="col-padding-5 ion-text-center">
+        <div class="round-img">
+          <img src="./assets/images/man.svg">
+        </div>
+        <ion-label>Men</ion-label>
+      </ion-col>
+      <ion-col size="2" class="col-padding-5 ion-text-center">
+        <div class="round-img">
+          <img src="./assets/images/kids.svg">
+        </div>
+        <ion-label>Kids</ion-label>
+      </ion-col>
+      <ion-col size="2" class="col-padding-5 ion-text-center">
+        <div class="round-img">
+          <img src="./assets/images/electronics.svg">
+        </div>
+        <ion-label>Electronincs</ion-label>
+      </ion-col>
+      <ion-col size="2" class="col-padding-5 ion-text-center">
+        <div class="round-img">
+          <img src="./assets/images/shipping.svg">
+        </div>
+        <ion-label>Stationary</ion-label>
+      </ion-col>
+      <ion-col size="1">
+      </ion-col>
+    </ion-row>
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <img src="./assets/images/banner.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="./assets/images/banner.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="./assets/images/banner.jpg">
+      </ion-slide>
+    </ion-slides>
+    <ion-row class="deals">
+      <ion-col size="6" class="col-padding-5 head">
+        <ion-label>
+          Top Deals
+        </ion-label>
+      </ion-col>
+      <ion-col size="6" class="ion-text-right col-padding-5 head">
+        <ion-label>
+          See All
+        </ion-label>
+      </ion-col>
+      <ion-col size="6" *ngFor="let deal of productList; let idx = index;" class="deal-prod"
+        [style.border-right]="idx%2==0 ? '1px solid gray' : 'none'">
+        <div class="prod-img" (click)="productDetials(deal)">
+          <img src="./assets/images/dummy-product.png">
+        </div>
+        <div class="prod-dtl">
+          <h5>
+            ₹ {{deal.product_price}}
+          </h5>
+          <ion-label>
+            {{deal.product_name}}
+          </ion-label>
+          <ion-button expand="block" class="ion-no-margin" (click)="addToCart(deal)">
+            Add to Cart
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

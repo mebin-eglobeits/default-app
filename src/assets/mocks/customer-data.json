@@ -1,0 +1,84 @@
+{
+    "id": 2,
+    "group_id": 1,
+    "default_billing": "9",
+    "default_shipping": "9",
+    "created_at": "2020-03-24 05:38:31",
+    "updated_at": "2020-04-09 16:20:59",
+    "created_in": "Default Store View",
+    "email": "eglobe@eglobeits.com",
+    "firstname": "eglobe",
+    "lastname": "R",
+    "store_id": 1,
+    "website_id": 1,
+    "addresses": [
+        {
+            "id": 9,
+            "customer_id": 2,
+            "region": {
+                "region_code": "KL",
+                "region": "Kerala",
+                "region_id": 550
+            },
+            "region_id": 550,
+            "country_id": "IN",
+            "street": [
+                "TC 29-301(1), Althara Nagar B Street 45,",
+                "Sasthamangalam PO,",
+                "Vellayambalam"
+            ],
+            "telephone": "9003644594",
+            "postcode": "695010",
+            "city": "Thiruvananthapuram",
+            "firstname": "eglobe",
+            "lastname": "R",
+            "default_shipping": true,
+            "default_billing": true
+        },
+        {
+            "id": 10,
+            "customer_id": 2,
+            "region": {
+                "region_code": "TN",
+                "region": "Tamil Nadu",
+                "region_id": 563
+            },
+            "region_id": 563,
+            "country_id": "IN",
+            "street": [
+                "No. 6, FCI Colony,",
+                "Ganapathy PO,",
+                "Bharathy Nagar"
+            ],
+            "telephone": "8438406663",
+            "postcode": "641006",
+            "city": "Coimbatore",
+            "firstname": "eglobe",
+            "lastname": "R"
+        },
+        {
+            "id": 11,
+            "customer_id": 2,
+            "region": {
+                "region_code": "TN",
+                "region": "Tamil Nadu",
+                "region_id": 563
+            },
+            "region_id": 563,
+            "country_id": "IN",
+            "street": [
+                "L-64, Police Quarters, Bharathy Nagar",
+                "Ganapathy PO"
+            ],
+            "telephone": "04222510943",
+            "postcode": "641006",
+            "city": "Coimbatore",
+            "firstname": "eglobe",
+            "lastname": "R"
+        }
+    ],
+    "disable_auto_group_change": 0,
+    "extension_attributes": {
+        "is_subscribed": false
+    }
+}

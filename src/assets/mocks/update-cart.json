@@ -1,0 +1,23 @@
+{
+    "item_id": 5,
+    "sku": "WH11-XL-Orange",
+    "qty": 3,
+    "name": "Eos V-Neck Hoodie-XL-Orange",
+    "price": 54,
+    "product_type": "simple",
+    "quote_id": "3",
+    "extension_attributes": {
+        "discounts": [
+            {
+                "discount_data": {
+                    "amount": 32.4,
+                    "base_amount": 32.4,
+                    "original_amount": 32.4,
+                    "base_original_amount": 32.4
+                },
+                "rule_label": "Discount",
+                "rule_id": 3
+            }
+        ]
+    }
+}

@@ -1,0 +1,134 @@
+<ion-header class="bevco-account-details-page-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaulthref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/images/icon-white.svg">
+      <span>{{appTitle}}</span>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bevco-account-details-page-content" fullscreen>
+
+  <ion-card class="bevco-account-details-container"
+    *ngIf="((currentProfile !== undefined) && (currentProfile !== null))">
+
+    <!-- <ion-card-header>
+      <ion-card-subtitle>{{pageTitle}}</ion-card-subtitle>
+    </ion-card-header> -->
+
+    <ion-card-content>
+
+      <ion-list class="bevco-account-form-section">
+
+        <form [formGroup]="customerForm" class="bevco-account-form-container">
+
+          <ion-list-header class="account-profile-edit-section-header ion-text-center">{{pageTitle}}</ion-list-header>
+
+          <ion-item class="bevco-account-page-profile-picture-section">
+            <ion-avatar>
+              <img [src]="profilePic" />
+            </ion-avatar>
+          </ion-item>
+
+          <ion-item class="account-details-info-section">
+
+            <ion-grid>
+
+              <ion-row class="account-details-info-part">
+                <!-- <ion-col size="3" class="account-details-info-label">
+                  <ion-label class="ion-text-wrap">Email</ion-label>
+                </ion-col> -->
+                <ion-col size="12" class="account-details-info-value">
+                  <ion-label class="ion-text-wrap">{{getCustomerEmail(currentProfile)}}</ion-label>
+                </ion-col>
+              </ion-row>
+
+            </ion-grid>
+
+          </ion-item>
+
+          <ion-item class="form-input-section">
+            <ion-label position="stacked">First Name<ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input type="text" class="bevco-account-form-input-control" id="firstname" placeholder="First Name"
+              formControlName="firstname">
+            </ion-input>
+          </ion-item>
+          <div class="validation-errors">
+            <ng-container *ngFor="let validation of validationMessages.firstname">
+              <div class="error-message" *ngIf="customerForm.get('firstname').hasError(validation.type) &&
+            (customerForm.get('firstname').dirty || customerForm.get('firstname').touched)">
+                {{ validation.message }}
+              </div>
+            </ng-container>
+          </div>
+
+          <ion-item class="form-input-section">
+            <ion-label position="stacked">Last Name<ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input type="text" class="bevco-account-form-input-control" id="lastname" placeholder="Last Name"
+              formControlName="lastname">
+            </ion-input>
+          </ion-item>
+          <div class="validation-errors">
+            <ng-container *ngFor="let validation of validationMessages.lastname">
+              <div class="error-message" *ngIf="customerForm.get('lastname').hasError(validation.type) &&
+            (customerForm.get('lastname').dirty || customerForm.get('lastname').touched)">
+                {{ validation.message }}
+              </div>
+            </ng-container>
+          </div>
+
+          <div class="bevco-account-form-input-buttons-section ion-text-center">
+            <ion-button *ngIf="!customerFormEnabled" size="default" type="button" class="ion-no-margin"
+              (click)="enableProfileForm()">
+              Edit
+            </ion-button>
+            <ion-button *ngIf="customerFormEnabled" size="small" type="button" class="ion-no-margin"
+              (click)="updateProfile()">
+              Update
+            </ion-button>
+            <ion-button *ngIf="customerFormEnabled" size="small" type="button" class="ion-no-margin"
+              (click)="resetProfile()">
+              Cancel
+            </ion-button>
+          </div>
+
+        </form>
+
+      </ion-list>
+
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-item class="bevco-account-page-addresses-section ion-text-center"
+    *ngIf="((currentProfile !== undefined) && (currentProfile !== null))">
+    <ion-button expand="block" size="default" type="button" class="ion-no-margin" (click)="gotoAddresses()">
+      My Addresses
+    </ion-button>
+  </ion-item>
+
+  <ion-item class="bevco-account-page-sign-out-section ion-text-center"
+    *ngIf="((currentProfile !== undefined) && (currentProfile !== null))">
+    <ion-button expand="block" size="default" type="button" class="ion-no-margin" (click)="signOut()">
+      Sign Out
+    </ion-button>
+  </ion-item>
+
+  <ion-card class="bevco-account-page-empty-container"
+    *ngIf="((currentProfile === undefined) || (currentProfile === null))">
+    <ion-card-content>
+      <ion-item>
+        <ion-label class="no-profile-content">No details found on the Profile.</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
